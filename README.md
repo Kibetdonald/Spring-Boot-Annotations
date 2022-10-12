@@ -65,3 +65,49 @@ public class Bus
 return new Bus();
 }
 }
+ 
+ #6. Controller
+ The annotation is used to indicate that the class is a web request handler. It is often used to present web pages. It goes hand in hand with @RequestMapping annotation
+ 
+ ##Syntax
+ @Controller
+@RequestMapping(“cars”)
+public class CarsController
+{
+@RequestMapping(value= “/{name}”, method= RequestMethod.GET)
+public Employee getCarsByName()
+{
+Return carsTemplate;
+}
+}
+7. @RequestMapping
+ It is used to map the HTTP Request. It also has many other optional elements like consumes, name, method, request, path, etc. 
+ 
+ ##Syntax
+ @Controller
+public class FlowersController
+{
+@RequestMapping (“/red-colour/flowers”)
+public String getAllFlowers(Model model)
+{
+//application code
+return “flowerlist”;
+}
+ 
+ 8. @Autowired
+ This annotation is used to auto-wire spring bean on setter methods, constructor and instance variable. It injects object dependency implicitly. When we use this annoation, the spring container auto-wires the bean by its matching data type.
+ 
+ ## Syntax
+ @Component
+public class Employee
+private Person person;
+@Autowired
+public Employee(Person person)
+{
+this.person=person
+}
+}
+  9. @SpringBootApplication
+ It consists of @Configuration, @ComponentScan, and @EnabeAutoConfiguration. The class annotated with @SpringBootApplication is kept in the base package. This annotation does the component scan. However, only the sub-packages are scanned. 
+ 
+ 
