@@ -12,7 +12,7 @@
 @Component
 @SpringBootApplication
 @EnableAutoConfiguration
-
+@GetMapping
 
 # 1. @crossorigin
 It enables cross-origin resource sharing only for this specific method. By default, its allows all origins, all headers, and the HTTP methods specified in the @RequestMapping annotation
@@ -120,5 +120,16 @@ this.person=person
  ```
  # 9. @SpringBootApplication
  It consists of @Configuration, @ComponentScan, and @EnabeAutoConfiguration. The class annotated with @SpringBootApplication is kept in the base package. This annotation does the component scan. However, only the sub-packages are scanned. 
+
+# 10.  @GetMapping annotation 
+ Indicates that the function processes a GET request.
  
+# 11. @PostMapping annotation
+ Indicates that a function processes a POST request.
+ 
+# 12. @PutMapping annotation 
+ Indicates that a function processes a PUT request.
+ 
+# 13. @DeleteMapping annotation 
+ Indicates that a function processes a DELETE request.
  
