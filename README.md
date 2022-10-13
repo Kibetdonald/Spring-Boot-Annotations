@@ -53,7 +53,7 @@ public void delete()
 // persistence code
 }}
 
-#5. @Configuration
+# 5. @Configuration
  Tags the class as a source of bean definitions for the application context. @EnableAutoConfiguration : Tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings.
  
  ## Syntax
@@ -66,10 +66,10 @@ return new Bus();
 }
 }
  
- #6. Controller
+ # 6. @ Controller
  The annotation is used to indicate that the class is a web request handler. It is often used to present web pages. It goes hand in hand with @RequestMapping annotation
  
- ##Syntax
+ ## Syntax
  @Controller
 @RequestMapping(“cars”)
 public class CarsController
@@ -80,10 +80,11 @@ public Employee getCarsByName()
 Return carsTemplate;
 }
 }
-7. @RequestMapping
+ 
+# 7. @RequestMapping
  It is used to map the HTTP Request. It also has many other optional elements like consumes, name, method, request, path, etc. 
  
- ##Syntax
+ ## Syntax
  @Controller
 public class FlowersController
 {
@@ -94,7 +95,8 @@ public String getAllFlowers(Model model)
 return “flowerlist”;
 }
  
- 8. @Autowired
+ 
+ # 8. @Autowired
  This annotation is used to auto-wire spring bean on setter methods, constructor and instance variable. It injects object dependency implicitly. When we use this annoation, the spring container auto-wires the bean by its matching data type.
  
  ## Syntax
@@ -107,7 +109,7 @@ public Employee(Person person)
 this.person=person
 }
 }
-  9. @SpringBootApplication
+ # 9. @SpringBootApplication
  It consists of @Configuration, @ComponentScan, and @EnabeAutoConfiguration. The class annotated with @SpringBootApplication is kept in the base package. This annotation does the component scan. However, only the sub-packages are scanned. 
  
  
